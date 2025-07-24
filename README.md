@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AngularTodo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.20.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# Todo_List
+Made To-Do List with register/login pages
+>>>>>>> 03dcf010c81175066d7f6d9878955ffcaef9d2b3

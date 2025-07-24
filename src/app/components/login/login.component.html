@@ -1,0 +1,40 @@
+<div class="app-login">
+  <form #loginForm="ngForm" name="loginForm" (ngSubmit)="onSubmit()">
+    <h1 style="text-align: center;">Login</h1>
+
+       <div class="input-group">
+    <label>Username</label>
+    <input
+      type="text"
+      name="username"
+      [(ngModel)]="username"
+      required
+      #usernameRef="ngModel"
+    />
+    <div class="error" *ngIf="usernameRef.invalid && usernameRef.touched">
+      Username is required
+    </div>
+  </div>
+
+  <div class="input-group">
+    <label>Password</label>
+    <input
+      type="password"
+      name="password"
+      [(ngModel)]="password"
+      required
+      minlength="4"
+      #passwordRef="ngModel"
+    />
+    <div class="error" *ngIf="passwordRef.invalid && passwordRef.touched">
+      <div *ngIf="passwordRef.errors?.['required']">Password is required</div>
+      <div *ngIf="passwordRef.errors?.['minlength']">Password must be at least 4 characters</div>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="!loginForm.valid">Login</button>
+</form>
+
+</div>
+
+   

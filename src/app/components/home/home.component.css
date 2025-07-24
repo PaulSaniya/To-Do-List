@@ -1,0 +1,77 @@
+.heading{
+  text-align: center;
+}
+
+.todoContainer{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  background-color: #f9f9f9;
+  border-radius: 9px;
+
+}
+
+.add-task{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.add-task input{
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+
+}
+
+.add-task button{
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background-color: rgb(28, 160, 231);
+  color: white;
+  border: 2px solid rgb(28, 160, 231);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: opacity 0.15s,
+  color 0.15s;
+}
+
+.add-task button:hover{
+  opacity: 0.8;
+}
+
+.add-task button:active{
+  background-color: white;
+  color: rgb(28, 160, 231);
+  
+}
+
+.task-list li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 4px;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.task-list button{
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.task-list li.completed span{
+  text-decoration: line-through;
+  color: rgb(96,96,96);
+}
